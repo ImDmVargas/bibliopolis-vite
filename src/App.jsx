@@ -15,6 +15,8 @@ import NewBook from "./components/catalog/newBook";
 import EditBook from "./components/catalog/editBook";
 import ViewBook from "./components/catalog/viewBook";
 import Stats from "./components/stats/stats";
+import Users from "./components/Users/home";
+import MyLoans from "./components/Users/myloans";
 import "./App.css";
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
           <Route path="/estudiantes" element={<Students />} />
           <Route path="/nuevoEstudiante" element={<NewStudent />} />
           <Route path="/editarEstudiante/:id" element={<EditStudent />} />
+          <Route path="/usuarios" element={<Users />} />
+          <Route path="/misprestamos" element={<MyLoans />} />
         </Routes>
       </Fragment>
     </Router>
